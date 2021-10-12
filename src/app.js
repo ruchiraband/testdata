@@ -2,7 +2,9 @@ const express = require("express");
 require("./db/conn");
 const Student = require("./models/students");
 const app = express();
-const port = process.env.PORT || 3000;
+const dotenv = require('dotenv');
+dotenv.config();
+const port = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -59,4 +61,6 @@ app.get("/students/:id", async (req, res) => {
 
 app.listen(port, () => {
     console.log(`connection is set up at port ${port}`);
+    console.log(`PORTServer ${process.env.PORT}`);
+    
 });
