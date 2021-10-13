@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "12.11.1",
-    "npm": "6.14.8"
+    "node": "16.6.1",
+    "npm": "7.20.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
